@@ -1,0 +1,5 @@
+
+@import "vars";
+@function type-scale($scale){
+	@return round($scale * $default_font_size * $type-scale-ratio);
+};
