@@ -1,5 +1,12 @@
 
-@import "vars";
+@import 'vars';
 @function type-scale($scale){
 	@return round($scale * $default_font_size * $type-scale-ratio);
-};
+}
+
+@mixin FontAwesome($icon:''){ 
+	font-family: 'FontAwesome' !important; 
+	font-weight: normal !important;
+	display: inline-block;
+	content: $icon;
+}

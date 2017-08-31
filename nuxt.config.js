@@ -18,7 +18,10 @@ module.exports = {
 	** Customize the progress-bar color
  	*/
 	loading: { color: '#009688' },
-	css: [{ src: 'tinyreset/tinyreset.css', lang: 'css' }],
+	css: [
+		{ src: 'tinyreset/tinyreset.css', lang: 'css' },
+		{ src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
+	],
 	/*
 	** Build configuration
 	*/
