@@ -11,8 +11,10 @@ body{
 	color: $gray-z4;
 	font-size: $default-font-size;
 	line-height: $blh;
+	font-weight: 300;
 	background-color: $gray-z3;
 	padding: $blh*2;
+	letter-spacing: 0.03em;
 }
 
 $h1-font-size: type-scale(3);
@@ -50,9 +52,16 @@ h2{
 }
 
 a{
+	@include padding(null $blh);
 	text-decoration: none;
 	color: $primary;
 	display: inline-block;
-	@include padding(null $blh);
+}
+
+.page-enter-active, .page-leave-active {
+	transition: opacity 0.35s $ease-in-out-quad;
+}
+.page-enter, .page-leave-to {
+	opacity: 0;
 }
 </style>
