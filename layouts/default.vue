@@ -59,7 +59,7 @@ a{
 }
 
 .page-enter-active, .page-leave-active {
-	transition: opacity 0.35s $ease-in-out-quad;
+	transition: opacity 0.33s $ease-in-out-quad;
 }
 .page-enter, .page-leave-to {
 	opacity: 0;
