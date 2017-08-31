@@ -1,7 +1,7 @@
 
 @import "node_modules/bourbon/app/assets/stylesheets/bourbon";
 
-$default_font_size: 14px;
+$default_font_size: 16px;
 $line_height_ratio: 1.33; // perfect-fourth
 // $line_height_ratio: 1.414; // augmented-fourth
 $base_line_height: round($line_height_ratio * $default_font_size);
@@ -9,3 +9,31 @@ $blh: $base_line_height; //shortcut since it's used sooo much
 
 // $type-scale-ratio: 1.33; // perfect-fourth
 $type-scale-ratio: 1.414; // augmented-fourth
+
+// material
+$red: 			#F44336;
+$pink: 			#E91E63;
+$purple: 		#9C27B0;
+$deep-purple: 	#673AB7;
+$indigo: 		#3F51B5;
+$blue: 			#2196F3;
+$light-blue: 	#03A9F4;
+$cyan: 			#00BCD4;
+$teal: 			#009688;
+$green: 		#4CAF50;
+$lime: 			#CDDC39;
+$yellow: 		#FFEB3B;
+$amber: 		#FFC107;
+$orange: 		#FF9800;
+$deep-orange: 	#FF5722;
+$brown: 		#795548;
+
+$gray_z7: 		#ECEFF1;
+$gray_z6: 		#B0BEC5;
+$gray_z5: 		#607D8B;
+$gray_z4: 		#455A64;
+$gray_z3: 		#263238;
+
+$primary: 	$teal;
+$dark: 		$gray_z3;
+$light: 	$gray_z7;
