@@ -25,7 +25,7 @@ import { TweenMax, Quad, Cubic, Quart } from 'gsap'
 export default {
 	transition: {
 		enter (el, done) {
-			TweenMax.staggerFrom(el.querySelectorAll('.polymath span'), 0.3, { opacity: 0, y: '30px', ease: Cubic.easeOut, onCompleteAll: done }, 0.1)
+			TweenMax.staggerFrom(el.querySelectorAll('.polymath span'), 0.3, { delay: 0.15, opacity: 0, y: '30px', ease: Cubic.easeOut, onCompleteAll: done }, 0.1)
 		}
 	}
 }
