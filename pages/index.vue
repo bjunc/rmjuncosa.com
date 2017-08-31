@@ -10,17 +10,65 @@
 			<nuxt-link to="/work">Work</nuxt-link>
 			<nuxt-link to="/experience">Experience</nuxt-link>
 		</div>
+		<div class="polymath">
+			<span class="polymath__title">polymath</span>
+			<span class="polymath__definition">
+				a person whose expertise spans a significant number of different subject areas;
+				such a person is known to draw on complex bodies of knowledge to solve specific problems
+			</span>
+		</div>
 	</div>
 </template>
 <script>
-export default {}
+/* eslint-disable no-unused-vars */
+import { TweenMax, Quad, Cubic, Quart } from 'gsap'
+export default {
+	transition: {
+		enter (el, done) {
+			TweenMax.staggerFrom(el.querySelectorAll('.polymath span'), 0.3, { opacity: 0, y: '30px', ease: Cubic.easeOut, onCompleteAll: done }, 0.1)
+		}
+	}
+}
 </script>
 <style lang="scss">
 @import "~assets/scss/mixins";
+.page-enter-active, .page-leave-active {
+	&.index-page{
+		.polymath{
+			transition: all 0.2s $ease-out-quart;		
+		}
+	}
+}
+.page-enter, .page-leave-to {
+	&.index-page{
+		.polymath{
+			// transform: translateY(150px);
+			// opacity: 0;
+		}
+	}
+}
 .index-page{
+	.polymath{
+		@include padding($blh $blh*2);
+		font-weight: 200;
+		margin-top: $blh*2;
+
+		span{
+			display: block;
+		}
+
+		&__title{
+			font-size: type-scale(3);
+			line-height: $blh*4;
+			font-weight: 300;
+		}
+		&__definition{
+			font-size: type-scale(1);
+			line-height: $blh*2;
+			max-width: 700px;
+		}
+	}
 	.greeting{
-		// padding-top: 55vh;
-		// padding-left: 55vw;
 		color: white;
 		text-align: right;
 	}
