@@ -422,7 +422,7 @@ export default {
 @import "~assets/scss/mixins";
 .geo-background{
 	@include position(fixed, 0px 0px 0px 0px);
-	background: linear-gradient(160deg, $gray-z3, darken($gray-z3, 6%));
+	background: linear-gradient(160deg, $gray-z3, darken($gray-z3, 4%));
 	z-index: -1;
 
 	svg{
