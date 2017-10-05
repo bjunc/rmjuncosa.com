@@ -293,6 +293,7 @@ export default {
 	z-index: -1;
 	svg{
 		@include size(100%);
+		opacity: 0.7;
 
 		path{
 			fill: none;
