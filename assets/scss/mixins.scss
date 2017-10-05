@@ -1,7 +1,7 @@
 
 @import 'vars';
-@function type-scale($scale){
-	@return round($scale * $default_font_size * $type-scale-ratio);
+@function type-scale($increment){
+	@return round(modular-scale($increment, $default-font-size, $type-scale-ratio));
 }
 
 @mixin FontAwesome($icon:''){ 
