@@ -1,9 +1,15 @@
 <template>
 	<div>
+		<GeoBackground />
 		<nuxt/>
 	</div>
 </template>
-
+<script>
+import GeoBackground from '~/components/GeoBackground'
+export default {
+	components: { GeoBackground }
+}
+</script>
 <style lang="scss">
 @import "~assets/scss/mixins";
 body{
@@ -13,7 +19,7 @@ body{
 	line-height: $blh;
 	font-weight: 300;
 	background-color: $gray-z3;
-	padding: $blh*2;
+	padding: 0px $blh*2;
 	letter-spacing: 0.03em;
 }
 

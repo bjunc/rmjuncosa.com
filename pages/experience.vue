@@ -6,7 +6,9 @@
 </template>
 <script>
 export default {
-
+	mounted () {
+		this.$store.state.backgroundDataset = 2
+	}
 }
 </script>
 <style lang="scss">

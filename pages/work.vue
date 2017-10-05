@@ -7,6 +7,9 @@
 <script>
 export default {
 
+	mounted () {
+		this.$store.state.backgroundDataset = 1
+	}
 }
 </script>
 <style lang="scss">
