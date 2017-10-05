@@ -10,3 +10,15 @@
 	display: inline-block;
 	content: $icon;
 }
+
+@mixin vertical-rhythm($scale: 0, $lines: 1, $topLines: 1, $bottomLines: 1){
+	$font-size: type-scale($scale);
+	$line-height: $blh * $lines;
+	$margin-top: $topLines * $blh;
+	$margin-bottom: $bottomLines * $blh;
+
+	font-size: $font-size;
+	line-height: $line-height;
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom;
+}
