@@ -66,10 +66,10 @@ export default {
 		}
 
 		&__title{
-			font-size: type-scale(3);
+			font-size: type-scale(4);
 			line-height: $blh*4;
-			font-weight: 300;
 			font-style: italic;
+			color: $lime;
 		}
 		&__definition{
 			font-size: type-scale(1);

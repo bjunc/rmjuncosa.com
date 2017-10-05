@@ -59,6 +59,9 @@ export default {
 
 			.tag{
 				@include padding(null $blh);
+				color: $amber;
+				font-size: type-scale(0);
+				font-weight: 200;
 			}
 		}
 	}
