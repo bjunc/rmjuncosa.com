@@ -23,7 +23,8 @@ module.exports = {
 	},
 	css: [
 		{ src: 'tinyreset/tinyreset.css', lang: 'css' },
-		{ src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
+		{ src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' },
+		{ src: '~/assets/scss/base.scss', lang: 'scss' }
 	],
 	/*
 	** Build configuration

@@ -1,0 +1,41 @@
+@import "~assets/scss/mixins";
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: $gray-z4;
+	font-size: $default-font-size;
+	line-height: $blh;
+	font-weight: 300;
+	background-color: $gray-z3;
+	padding: 0px $blh*2;
+	padding-top: $blh;
+	letter-spacing: 0.03em;
+	min-height: 100vh;
+}
+
+h1{
+	@include vertical-rhythm(3, 3, 2, 1);
+	text-transform: uppercase;
+	font-weight: 200;
+	color: white;
+}
+
+h2{
+	@include vertical-rhythm(2, 3, 2, 1);
+	text-transform: uppercase;
+	font-weight: 200;
+	color: $gray-z7;
+}
+
+a{
+	@include padding(null $blh);
+	text-decoration: none;
+	color: $primary;
+	display: inline-block;
+}
+
+.page-enter-active, .page-leave-active {
+	transition: opacity 0.33s $ease-in-out-quad;
+}
+.page-enter, .page-leave-to {
+	opacity: 0;
+}

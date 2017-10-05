@@ -2,6 +2,7 @@
 	<div class="index-page">
 		<div class="greeting">
 			<h1>Robert M. Juncosa</h1>
+			<label>Creative Technologist</label>
 			<div class="contacts">
 				<a class="contact contact--email" href="mailto:bobbyjuncosa@gmail.com"></a>
 				<a class="contact contact--github" href="https://github.com/bjunc" target="_blank"></a>
@@ -25,7 +26,7 @@ import { TweenMax, Quad, Cubic, Quart } from 'gsap'
 export default {
 	transition: {
 		enter (el, done) {
-			TweenMax.staggerFromTo(el.querySelectorAll('.polymath span'), 0.3, { delay: 0.15, opacity: 0, y: '30px', overwrite: 'none', ease: Cubic.easeOut }, { opacity: 1 }, 0.1, done)
+			TweenMax.staggerFrom(el.querySelectorAll('.polymath span'), 0.3, { delay: 0.15, opacity: 0, y: '30px', overwrite: 'none', ease: Cubic.easeOut }, 0.1, done)
 			TweenMax.staggerFromTo(document.querySelectorAll('svg path'), 3, { opacity: 0 }, { opacity: 1, ease: Cubic.easeOut }, 0.1)
 		},
 		leave (el, done) {
@@ -55,6 +56,14 @@ export default {
 	}
 }
 .index-page{
+	h1 + label{
+		display: block;
+		margin-top: -$blh;
+		font-weight: 200;
+		margin-bottom: $blh;
+		color: $gray-z6;
+	}
+
 	.polymath{
 		@include padding($blh $blh*2);
 		font-weight: 200;

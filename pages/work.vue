@@ -163,55 +163,20 @@ export default {
 	text-align: right;
 
 	> header{
-		// background-color: $gray-z3;
-		
 		h1{
 			margin-top: 0px;
 			padding-top: $blh;
 		}
 	}
 
-	&:before, &:after{
-		content: '';
-		position: fixed;
-		/* trick to remove some annoying flickering on webkit browsers */
-		width: $blh*5;
-		left: $blh*2;
-		// transform: translateX(-50%);
-		height: 50vh;
-		z-index: -1;
-	}
-	&:before{
-		top: 0px;
-		// background-color: $blue;
-		transition: all 0.8s;
-	}
-	&:after{
-		top: 50vh;
-		// background-color: $gray-z4;
-		height: calc(100vh - #{$blh*10});
-	}
-
 	.projects{
 		text-align: left;
-
-		&:after{
-			content: '';
-			// background-color: $gray-z3;
-			height: 50vh;
-			display: block;
-		}
 	}
 
 	.project{
 		margin-top: $blh*4;
 
 		&:first-child{ margin-top: 0px;	}
-
-		h3{
-			@include vertical-rhythm(2);
-			color: white;
-		}
 	}
 }
 </style>

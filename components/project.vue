@@ -35,6 +35,12 @@ export default {
 	padding-left: $blh*3;
 	margin-left: $blh*2;
 
+	h3{
+		@include vertical-rhythm(3, 2);
+		font-weight: 200;
+		color: white;
+	}
+
 	&__description, &__technology{
 		color: $gray-z6;
 
