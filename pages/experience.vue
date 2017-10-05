@@ -17,7 +17,7 @@ export default {
 		}
 	},
 	mounted () {
-		this.$store.state.backgroundDataset = 2
+		this.$store.state.backgroundDataset = 3
 	}
 }
 </script>
