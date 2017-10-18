@@ -153,7 +153,7 @@ export default {
 		}
 	},
 	mounted () {
-		this.$store.state.backgroundDataset = 1
+		this.$store.state.backgroundDataset = 2
 	}
 }
 </script>
@@ -161,6 +161,13 @@ export default {
 @import "~assets/scss/mixins";
 .work-page{
 	text-align: right;
+	padding-right: $blh*2;
+	padding-bottom: $blh*4;
+
+	@include bpXs{
+		padding-left: $blh;
+		padding-right: $blh;
+	}
 
 	> header{
 		h1{
@@ -174,7 +181,7 @@ export default {
 	}
 
 	.project{
-		margin-top: $blh*4;
+		margin-top: $blh*2;
 
 		&:first-child{ margin-top: 0px;	}
 	}
