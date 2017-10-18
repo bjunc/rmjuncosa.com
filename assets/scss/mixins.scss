@@ -1,5 +1,8 @@
 
 @import 'vars';
+
+@mixin border-box{ box-sizing: border-box; }
+
 @function type-scale($increment){
 	@return round(modular-scale($increment, $default-font-size, $type-scale-ratio));
 }
@@ -22,3 +25,8 @@
 	margin-top: $margin-top;
 	margin-bottom: $margin-bottom;
 }
+
+@mixin bpLg{ @media screen and (max-width: $breakpoint-lg){ @content; } }
+@mixin bpMd{ @media screen and (max-width: $breakpoint-md){ @content; } }
+@mixin bpSm{ @media screen and (max-width: $breakpoint-sm){ @content; } }
+@mixin bpXs{ @media screen and (max-width: $breakpoint-xs){ @content; } }
