@@ -28,12 +28,14 @@ export default {
 			projects: [
 				{
 					title: 'Core22',
+					client: 'Core',
 					description: 'Wellness app, with ecommerce',
 					techDescription: 'Isopmorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL',
 					date: '2017',
+					status: 'MVP development',
 					tags: {
-						primary: ['Phoenix', 'Nuxt/Vue.js', 'GraphQL', 'Postgres', 'Heroku'],
-						secondary: ['Webpack', 'SASS'],
+						primary: ['vuejs', 'graphql', 'phoenix', 'postgres', 'heroku'],
+						secondary: ['webpack', 'sass'],
 						services: ['SendGrid', 'Twilio', 'Stripe', 'Sentry/Raven', 'Mixpanel']
 					}
 				},
@@ -43,10 +45,11 @@ export default {
 					description: 'Asset management portal connecting Dropbox, Box, and AWS S3 storage with tagging, search, and user management.',
 					techDescription: 'Vue SPA talking to Laravel via REST',
 					date: '2017',
+					status: 'MVP private beta',
 					tags: {
-						primary: ['Laravel', 'Vue.js', 'Postgres', 'Heroku'],
-						secondary: ['Webpack', 'SASS'],
-						services: ['Dropbox', 'Box', 'AWS S3', 'MailGun', 'Sentry/Raven', 'Mixpanel']
+						primary: ['vuejs', 'laravel', 'postgres', 'heroku'],
+						secondary: ['webpack', 'sass'],
+						services: ['Dropbox', 'Box', 'aws', 'MailGun', 'Sentry/Raven', 'Mixpanel']
 					}
 				},
 				{
@@ -55,9 +58,10 @@ export default {
 					description: 'New construction marketplace',
 					techDescription: '...',
 					date: '2017',
+					status: 'active',
 					tags: {
-						primary: ['Symfony', 'Vue.js', 'GraphQL', 'EC2/EBS/S3'],
-						secondary: ['Webpack', 'SASS'],
+						primary: ['vuejs', 'graphql', 'symfony', 'mysql', 'aws'],
+						secondary: ['webpack', 'sass'],
 						services: ['Stripe', 'Mandrill', 'Twilio', 'Slack', 'Sentry/Raven', 'Mixpanel', 'GetStream']
 					}
 				},
@@ -67,9 +71,10 @@ export default {
 					description: '...',
 					techDescription: '...',
 					date: '2016',
+					status: 'active, unmaintained',
 					tags: {
-						primary: ['Drupal', 'Backbone.js'],
-						secondary: ['SASS']
+						primary: ['backbonejs', 'drupal', 'mysql'],
+						secondary: ['sass']
 					}
 				},
 				{
@@ -78,48 +83,53 @@ export default {
 					description: '...',
 					techDescription: '...',
 					date: '2015',
+					status: 'active, unmaintained',
 					tags: {
-						primary: ['Drupal', 'Backbone.js', 'EC2'],
-						secondary: ['SASS']
+						primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
+						secondary: ['sass']
 					}
 				},
 				{
 					title: 'Visit System',
 					client: 'ARI',
 					date: '2015',
+					status: 'end-of-life',
 					description: '...',
 					techDescription: '...',
 					tags: {
-						primary: ['Drupal', 'Backbone.js', 'EC2'],
-						secondary: ['SASS']
+						primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
+						secondary: ['sass']
 					}
 				},
 				{
 					title: 'Video Center',
 					client: 'GeoBlue',
 					date: '2015',
+					status: 'retired',
 					description: '...',
 					techDescription: '...',
 					tags: {
-						primary: ['Drupal', 'Backbone.js', 'EC2/S3'],
-						secondary: ['SASS']
+						primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
+						secondary: ['sass']
 					}
 				},
 				{
 					title: 'Presentation Platform',
 					client: 'ARAMARK Education',
 					date: '2014',
+					status: 'retired',
 					description: '...',
 					techDescription: '...',
 					tags: {
-						primary: ['Drupal', 'Backbone.js', 'EC2/S3'],
-						secondary: ['SASS']
+						primary: ['backbonejs', 'drupal', 'mysql', 'air', 'aws'],
+						secondary: ['sass']
 					}
 				},
 				{
 					title: 'Wall Street Journal',
 					client: 'Wall Street Journal',
 					date: '2010',
+					status: 'unknown',
 					description: '...',
 					techDescription: '...',
 					tags: {
@@ -133,6 +143,7 @@ export default {
 					date: '2010',
 					description: 'Intranet UX/UI consultant.',
 					techDescription: '...',
+					status: 'unknown',
 					tags: {
 						primary: [],
 						secondary: []
@@ -144,6 +155,7 @@ export default {
 					date: '2009',
 					description: 'Consultant.  Mobile and mobile web UX/UI best practices, emerging trends, and optimization.',
 					techDescription: '...',
+					status: 'unknown',
 					tags: {
 						primary: [],
 						secondary: []
