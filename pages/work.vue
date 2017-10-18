@@ -31,7 +31,10 @@ export default {
 					client: 'Core',
 					description: 'Wellness / weight-loss app, with ecommerce, and real-time coaching.',
 					role: 'full-stack dev',
-					techDescription: 'Isopmorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL over socket channels',
+					techDescription: `
+					Isopmorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL over socket channels.
+					Payment processing through Stripe.
+					`,
 					date: '2017',
 					status: 'MVP development',
 					tags: {
@@ -43,8 +46,8 @@ export default {
 				{
 					title: 'S4C',
 					client: 'Marketbridge',
-					description: 'Asset management portal connecting Dropbox, Box, and AWS S3 storage with tagging, search, and user management.',
-					techDescription: 'Vue SPA talking to Laravel via REST',
+					description: 'b2b asset management connecting Dropbox, Box, and AWS S3 storage with tagging, search, and user management.',
+					techDescription: 'Vue SPA talking to Laravel via REST.',
 					date: '2017',
 					status: 'MVP private beta',
 					role: 'front-end dev',
@@ -57,8 +60,11 @@ export default {
 				{
 					title: 'EdgewiseRealty.com',
 					client: 'Edgewise Realty',
-					description: 'New construction marketplace',
-					techDescription: '...',
+					description: `
+						New construction marketplace connecting buyers and sellers from 
+						lead-gen through fulfillment (move-in).
+					`,
+					techDescription: 'Multi-page Vue app calling both GraphQL and REST APIs.',
 					date: '2017',
 					status: 'active',
 					role: 'CTO (full-stack dev), creative & marketing director',

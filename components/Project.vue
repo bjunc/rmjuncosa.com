@@ -106,6 +106,10 @@ export default {
 		}
 	}
 
+	&__description{
+		margin-bottom: $blh;
+	}
+
 	&__client{
 		color: $gray-z5;
 	}
