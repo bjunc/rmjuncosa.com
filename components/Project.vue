@@ -6,6 +6,7 @@
 			<span v-if="project.client">{{ project.client }}</span>
 		</h4>
 		<h4 class="project__status">status: {{ project.status }}</h4>
+		<h4 v-if="project.role" class="project__role">role: {{ project.role }}</h4>
 		<div class="project__description"><p>{{ project.description }}</p></div>
 		<div class="project__technology">
 			<div class="project__tech-description">
@@ -113,6 +114,12 @@ export default {
 		margin-top: -$blh;
 		margin-bottom: $blh;
 		color: $gray-z5;
+	}
+
+	&__role{
+		color: $gray-z5;
+		margin-top: -$blh;
+		margin-bottom: $blh;
 	}
 
 	$icon_size: 34px;

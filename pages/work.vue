@@ -29,8 +29,9 @@ export default {
 				{
 					title: 'Core22',
 					client: 'Core',
-					description: 'Wellness app, with ecommerce',
-					techDescription: 'Isopmorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL',
+					description: 'Wellness / weight-loss app, with ecommerce, and real-time coaching.',
+					role: 'full-stack dev',
+					techDescription: 'Isopmorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL over socket channels',
 					date: '2017',
 					status: 'MVP development',
 					tags: {
@@ -46,6 +47,7 @@ export default {
 					techDescription: 'Vue SPA talking to Laravel via REST',
 					date: '2017',
 					status: 'MVP private beta',
+					role: 'front-end dev',
 					tags: {
 						primary: ['vuejs', 'laravel', 'postgres', 'heroku'],
 						secondary: ['webpack', 'sass'],
@@ -59,6 +61,7 @@ export default {
 					techDescription: '...',
 					date: '2017',
 					status: 'active',
+					role: 'CTO (full-stack dev), creative & marketing director',
 					tags: {
 						primary: ['vuejs', 'graphql', 'symfony', 'mysql', 'aws'],
 						secondary: ['webpack', 'sass'],
@@ -72,6 +75,7 @@ export default {
 					techDescription: '...',
 					date: '2016',
 					status: 'active, unmaintained',
+					role: 'front-end dev',
 					tags: {
 						primary: ['backbonejs', 'drupal', 'mysql'],
 						secondary: ['sass']
@@ -84,6 +88,7 @@ export default {
 					techDescription: '...',
 					date: '2015',
 					status: 'active, unmaintained',
+					role: 'full-stack dev, creative director',
 					tags: {
 						primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
 						secondary: ['sass']
@@ -94,6 +99,7 @@ export default {
 					client: 'ARI',
 					date: '2015',
 					status: 'end-of-life',
+					role: 'full-stack dev',
 					description: '...',
 					techDescription: '...',
 					tags: {
@@ -108,6 +114,7 @@ export default {
 					status: 'retired',
 					description: '...',
 					techDescription: '...',
+					role: 'full-stack dev, creative director',
 					tags: {
 						primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
 						secondary: ['sass']
@@ -120,6 +127,7 @@ export default {
 					status: 'retired',
 					description: '...',
 					techDescription: '...',
+					role: 'full-stack dev, creative director',
 					tags: {
 						primary: ['backbonejs', 'drupal', 'mysql', 'air', 'aws'],
 						secondary: ['sass']
@@ -132,6 +140,7 @@ export default {
 					status: 'unknown',
 					description: '...',
 					techDescription: '...',
+					role: 'front-end dev',
 					tags: {
 						primary: [],
 						secondary: []
