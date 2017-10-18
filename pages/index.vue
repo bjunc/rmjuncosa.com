@@ -56,6 +56,8 @@ export default {
 	}
 }
 .index-page{
+	@include padding(null $blh*2);
+
 	h1 + label{
 		display: block;
 		margin-top: -$blh;
