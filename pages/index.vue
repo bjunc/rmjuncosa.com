@@ -9,7 +9,7 @@
 				<a class="contact contact--location" href="https://www.google.com/maps/place/Brickell,+Miami,+FL/@25.7592852,-80.2116203,14z/data=!3m1!4b1!4m5!3m4!1s0x88d9b680b32f18ad:0x4ad3029ff324f4d5!8m2!3d25.7601793!4d-80.1958755" target="_blank"></a>
 			</div>
 			<nuxt-link to="/work">Work</nuxt-link>
-			<nuxt-link to="/experience">Experience</nuxt-link>
+			<!-- <nuxt-link to="/experience">Experience</nuxt-link> -->
 		</div>
 		<div class="polymath">
 			<span class="polymath__title">polymath</span>
