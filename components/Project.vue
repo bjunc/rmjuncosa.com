@@ -18,6 +18,7 @@
 					<AwsIcon v-else-if="tag === 'aws'" />
 					<BackboneIcon v-else-if="tag === 'backbonejs'" />
 					<DrupalIcon v-else-if="tag === 'drupal'" />
+          <FlashIcon v-else-if="tag === 'flash'" />
 					<GraphQlIcon v-else-if="tag === 'graphql'" />
 					<HerokuIcon v-else-if="tag === 'heroku'" />
 					<SymfonyIcon v-else-if="tag === 'symfony'" />
@@ -37,6 +38,7 @@
 					<AwsIcon v-else-if="tag === 'aws'" />
 					<BackboneIcon v-else-if="tag === 'backbonejs'" />
 					<DrupalIcon v-else-if="tag === 'drupal'" />
+          <FlashIcon v-else-if="tag === 'flash'" />
 					<GraphQlIcon v-else-if="tag === 'graphql'" />
 					<HerokuIcon v-else-if="tag === 'heroku'" />
 					<SymfonyIcon v-else-if="tag === 'symfony'" />
@@ -61,6 +63,7 @@ import AdobeAirIcon from '~/components/icons/AdobeAirIcon'
 import AwsIcon from '~/components/icons/AwsIcon'
 import BackboneIcon from '~/components/icons/BackboneIcon'
 import DrupalIcon from '~/components/icons/DrupalIcon'
+import FlashIcon from '~/components/icons/FlashIcon'
 import GraphQlIcon from '~/components/icons/GraphQlIcon'
 import HerokuIcon from '~/components/icons/HerokuIcon'
 import LaravelIcon from '~/components/icons/LaravelIcon'
@@ -73,7 +76,7 @@ import VueIcon from '~/components/icons/VueIcon'
 import WebpackIcon from '~/components/icons/WebpackIcon'
 export default {
 	props: ['project'],
-	components: { AdobeAirIcon, AwsIcon, BackboneIcon, DrupalIcon, GraphQlIcon, HerokuIcon, LaravelIcon, MySqlIcon, PhoenixIcon, PostgresIcon, SassIcon, SymfonyIcon, VueIcon, WebpackIcon }
+	components: { AdobeAirIcon, AwsIcon, BackboneIcon, DrupalIcon, FlashIcon, GraphQlIcon, HerokuIcon, LaravelIcon, MySqlIcon, PhoenixIcon, PostgresIcon, SassIcon, SymfonyIcon, VueIcon, WebpackIcon }
 }
 </script>
 <style lang="scss">

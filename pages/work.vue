@@ -32,7 +32,7 @@ export default {
 					description: 'Wellness / weight-loss app, with ecommerce, and real-time coaching.',
 					role: 'full-stack dev',
 					techDescription: `
-					Isopmorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL over socket channels.
+					Isomorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL over socket channels.
 					Payment processing through Stripe.
 					`,
 					date: '2017',
@@ -77,8 +77,8 @@ export default {
 				{
 					title: 'D2Groups.com',
 					client: 'D2 Groups',
-					description: '...',
-					techDescription: '...',
+					description: 'Responsive marketing site for architecture and interior design firm.',
+					techDescription: 'Content management through Drupal 7, with Backbone.js',
 					date: '2016',
 					status: 'active, unmaintained',
 					role: 'front-end dev',
@@ -90,8 +90,8 @@ export default {
 				{
 					title: 'HTHWorldwide.com',
 					client: 'HTH Worldwide',
-					description: '...',
-					techDescription: '...',
+					description: 'b2b marketing site.  Oversaw strategy, content, design, and was lead full-stack developer.',
+					techDescription: 'Content management through Drupal 7, with Backbone.js',
 					date: '2015',
 					status: 'active, unmaintained',
 					role: 'full-stack dev, creative director',
@@ -106,8 +106,8 @@ export default {
 					date: '2015',
 					status: 'end-of-life',
 					role: 'full-stack dev',
-					description: '...',
-					techDescription: '...',
+					description: 'Internal tool for coordinating client visit agendas, as well notifying presenters via calendar invites/updates.  Visit itineraries are printable for handouts on visit day.',
+					techDescription: 'Drupal 7 content management system with Backbone.js',
 					tags: {
 						primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
 						secondary: ['sass']
@@ -118,11 +118,11 @@ export default {
 					client: 'GeoBlue',
 					date: '2015',
 					status: 'retired',
-					description: '...',
-					techDescription: '...',
+					description: 'Responsive video library',
+					techDescription: 'Custom video players supporting both Flash streaming and HTML5 from AWS.',
 					role: 'full-stack dev, creative director',
 					tags: {
-						primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
+						primary: ['backbonejs', 'flash', 'aws'],
 						secondary: ['sass']
 					}
 				},
@@ -131,9 +131,9 @@ export default {
 					client: 'ARAMARK Education',
 					date: '2014',
 					status: 'retired',
-					description: '...',
-					techDescription: '...',
-					role: 'full-stack dev, creative director',
+					description: 'Desktop application for syncing approved/updated interactive marketing content.',
+					techDescription: 'Interactive marketing presentations built in web technology, with content managed through Drupal 7, and deployed through Adobe AIR.',
+					role: 'full-stack dev, strategic and creative director',
 					tags: {
 						primary: ['backbonejs', 'drupal', 'mysql', 'air', 'aws'],
 						secondary: ['sass']
@@ -144,8 +144,8 @@ export default {
 					client: 'Wall Street Journal',
 					date: '2010',
 					status: 'unknown',
-					description: '...',
-					techDescription: '...',
+					description: 'HTML and CSS consultant for building out new b2b product site.  Worked closely with WSJ team regarding process, best practices, and integrations.',
+					// techDescription: '...',
 					role: 'front-end dev',
 					tags: {
 						primary: [],
@@ -157,7 +157,7 @@ export default {
 					client: 'Lincoln Financial',
 					date: '2010',
 					description: 'Intranet UX/UI consultant.',
-					techDescription: '...',
+					// techDescription: '...',
 					status: 'unknown',
 					tags: {
 						primary: [],
@@ -169,7 +169,7 @@ export default {
 					client: 'Dow Jones',
 					date: '2009',
 					description: 'Consultant.  Mobile and mobile web UX/UI best practices, emerging trends, and optimization.',
-					techDescription: '...',
+					// techDescription: '...',
 					status: 'unknown',
 					tags: {
 						primary: [],
