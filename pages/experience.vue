@@ -23,7 +23,32 @@ export default {
 }
 </script>
 <style lang="scss">
+@import "~assets/scss/mixins";
 .experience-page{
 	text-align: right;
+	padding-right: $blh*2;
+	padding-bottom: $blh*4;
+
+	@include bpXs{
+		padding-left: $blh;
+		padding-right: $blh;
+	}
+
+	> header{
+		h1{
+			margin-top: 0px;
+			padding-top: $blh;
+		}
+	}
+
+	.projects{
+		text-align: left;
+	}
+
+	.project{
+		margin-top: $blh*2;
+
+		&:first-child{ margin-top: 0px;	}
+	}
 }
 </style>
