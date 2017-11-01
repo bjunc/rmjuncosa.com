@@ -75,8 +75,8 @@ import SymfonyIcon from '~/components/icons/SymfonyIcon'
 import VueIcon from '~/components/icons/VueIcon'
 import WebpackIcon from '~/components/icons/WebpackIcon'
 export default {
-	props: ['project'],
-	components: { AdobeAirIcon, AwsIcon, BackboneIcon, DrupalIcon, FlashIcon, GraphQlIcon, HerokuIcon, LaravelIcon, MySqlIcon, PhoenixIcon, PostgresIcon, SassIcon, SymfonyIcon, VueIcon, WebpackIcon }
+  props: ['project'],
+  components: { AdobeAirIcon, AwsIcon, BackboneIcon, DrupalIcon, FlashIcon, GraphQlIcon, HerokuIcon, LaravelIcon, MySqlIcon, PhoenixIcon, PostgresIcon, SassIcon, SymfonyIcon, VueIcon, WebpackIcon }
 }
 </script>
 <style lang="scss">

@@ -1,13 +1,13 @@
 <template>
-	<div>
-		<GeoBackground />
-		<nuxt/>
-	</div>
+  <div>
+    <GeoBackground />
+    <nuxt/>
+  </div>
 </template>
 <script>
 import GeoBackground from '~/components/GeoBackground'
 export default {
-	components: { GeoBackground }
+  components: { GeoBackground }
 }
 </script>
 <style lang="scss">

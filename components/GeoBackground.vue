@@ -22,23 +22,6 @@ import pattern2 from '~/store/pattern2'
 import pattern3 from '~/store/pattern3'
 import pattern4 from '~/store/pattern4'
 export default {
-						{
-	computed: {
-		currentDataset () {
-			return this.datasets[this.$store.state.backgroundDataset]
-		}
-	},
-	methods: {
-		buildPath (data) {
-			let description = []
-			if (data.m) description.push(`M${data.m.x},${data.m.y}`)
-			if (data.q) description.push(`Q ${data.q.x} ${data.q.y}`)
-			if (data.a) description.push(`A ${data.a.rx} ${data.a.ry} ${data.a.xAxisRotation} ${data.a.largeArcFlag} ${data.a.sweepFlag} ${data.a.x} ${data.a.y}`)
-			if (data.end) description.push(`${data.end.x},${data.end.y}`)
-			if (data.l) description.push(`L ${data.l.x} ${data.l.y}`)
-			return description
-		}
-	}
   data () {
     return {
       datasets: [
@@ -49,6 +32,22 @@ export default {
       ]
     }
   },
+  computed: {
+    currentDataset () {
+      return this.datasets[this.$store.state.backgroundDataset]
+    }
+  },
+  methods: {
+    buildPath (data) {
+      let description = []
+      if (data.m) description.push(`M${data.m.x},${data.m.y}`)
+      if (data.q) description.push(`Q ${data.q.x} ${data.q.y}`)
+      if (data.a) description.push(`A ${data.a.rx} ${data.a.ry} ${data.a.xAxisRotation} ${data.a.largeArcFlag} ${data.a.sweepFlag} ${data.a.x} ${data.a.y}`)
+      if (data.end) description.push(`${data.end.x},${data.end.y}`)
+      if (data.l) description.push(`L ${data.l.x} ${data.l.y}`)
+      return description
+    }
+  }
 }
 </script>
 <style lang="scss">

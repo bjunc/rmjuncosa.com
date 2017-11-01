@@ -1,5 +1,5 @@
 <template>
-	<div class="index-page">
+  <div class="index-page">
 		<div class="greeting">
 			<h1>Robert M. Juncosa</h1>
 			<label>Creative Technologist</label>
@@ -9,7 +9,7 @@
 				<a class="contact contact--location" href="https://www.google.com/maps/place/Brickell,+Miami,+FL/@25.7592852,-80.2116203,14z/data=!3m1!4b1!4m5!3m4!1s0x88d9b680b32f18ad:0x4ad3029ff324f4d5!8m2!3d25.7601793!4d-80.1958755" target="_blank"></a>
 			</div>
 			<nuxt-link to="/work">Work</nuxt-link>
-			<!-- <nuxt-link to="/experience">Experience</nuxt-link> -->
+			<nuxt-link to="/experience">Experience</nuxt-link>
 		</div>
 		<div class="polymath">
 			<span class="polymath__title">polymath</span>
@@ -24,18 +24,18 @@
 /* eslint-disable no-unused-vars */
 import { TweenMax, Quad, Cubic, Quart } from 'gsap'
 export default {
-	transition: {
-		enter (el, done) {
-			TweenMax.staggerFrom(el.querySelectorAll('.polymath span'), 0.3, { delay: 0.15, opacity: 0, y: '30px', overwrite: 'none', ease: Cubic.easeOut }, 0.1, done)
-			TweenMax.staggerFromTo(document.querySelectorAll('.geo-background svg path'), 3, { opacity: 0 }, { opacity: 1, ease: Cubic.easeOut }, 0.1)
-		},
-		leave (el, done) {
-			TweenMax.staggerTo(document.querySelectorAll('.geo-background svg path'), 0.1, { opacity: 0, ease: Cubic.easeOut, overwrite: 'none' }, 0.05, done)
-		}
-	},
-	mounted () {
-		this.$store.state.backgroundDataset = 0
-	}
+  transition: {
+    enter (el, done) {
+      TweenMax.staggerFrom(el.querySelectorAll('.polymath span'), 0.3, { delay: 0.15, opacity: 0, y: '30px', overwrite: 'none', ease: Cubic.easeOut }, 0.1, done)
+      TweenMax.staggerFromTo(document.querySelectorAll('.geo-background svg path'), 3, { opacity: 0 }, { opacity: 1, ease: Cubic.easeOut }, 0.1)
+    },
+    leave (el, done) {
+      TweenMax.staggerTo(document.querySelectorAll('.geo-background svg path'), 0.1, { opacity: 0, ease: Cubic.easeOut, overwrite: 'none' }, 0.05, done)
+    }
+  },
+  mounted () {
+    this.$store.state.backgroundDataset = 0
+  }
 }
 </script>
 <style lang="scss">
