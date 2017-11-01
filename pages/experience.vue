@@ -5,13 +5,16 @@
       <nuxt-link to="/">home</nuxt-link>
       <nuxt-link to="/work">work</nuxt-link>
     </header>
-    <ul class="experience-list">
+    <ul class="experiences">
+      <Experience v-for="(experience, index) in experiences" :experience="experience" :key="index" />
     </ul>
   </div>
 </template>
 <script>
 /* eslint-disable no-unused-vars */
 import { TweenMax, Quad, Cubic, Quart } from 'gsap'
+import experiences from '~/store/experiences'
+import Experience from '~/components/Experience'
 export default {
   transition: {
     enter (el, done) {
@@ -20,6 +23,10 @@ export default {
     leave (el, done) {
       TweenMax.staggerTo(document.querySelectorAll('svg path'), 0.1, { opacity: 0, ease: Cubic.easeOut, overwrite: 'all' }, 0.05, done)
     }
+  },
+  components: { Experience },
+  data () {
+    return { experiences }
   },
   mounted () {
     this.$store.state.backgroundDataset = 3
@@ -39,20 +46,26 @@ export default {
 	}
 
 	> header{
+    margin-bottom: $blh*2;
+
 		h1{
 			margin-top: 0px;
 			padding-top: $blh;
 		}
 	}
 
-	.projects{
+	.experiences{
 		text-align: left;
 	}
 
-	.project{
+	.experience{
 		margin-top: $blh*2;
 
 		&:first-child{ margin-top: 0px;	}
+
+    @include bpXs{
+      margin-top: $blh;
+	  }
 	}
 }
 </style>
