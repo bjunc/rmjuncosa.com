@@ -6,7 +6,7 @@
       <nuxt-link to="/experience">experience</nuxt-link>
     </header>
     <ul class="projects">
-      <project v-for="project in projects" :project="project" :key="project.title"></project>
+      <Project v-for="project in projects" :project="project" :key="project.title" />
     </ul>
   </div>
 </template>
