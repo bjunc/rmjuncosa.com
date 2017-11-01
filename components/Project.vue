@@ -83,12 +83,10 @@ export default {
 @import "~assets/scss/mixins";
 .project{
 	@include border-box;
+  @include padding($blh*1 $blh $blh*3 $blh*3);
 	width: calc(70.75% - 14.65%);
 	position: relative;
 	z-index: 2;
-	padding-top: $blh*1;
-	padding-left: $blh*3;
-	padding-bottom: $blh*3;
 	margin-left: 14.65%;
 	border: 1px solid rgba($gray-z4, 0.6);
 	background-color: rgba(darken($gray-z3, 3%), 0.8);

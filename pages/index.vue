@@ -58,6 +58,16 @@ export default {
 .index-page{
 	@include padding(null $blh*2);
 
+  @include bpXs{
+    padding-left: 0px;
+  }
+
+  h1{
+    @include bpXs{
+      @include vertical-rhythm(2, 1.75, 1, 1.5);
+    }
+  }
+
 	h1 + label{
 		display: block;
 		margin-top: -$blh;
@@ -72,15 +82,18 @@ export default {
 		margin-top: $blh*2;
 		color: $gray-z6;
 
-		span{
-			display: block;
-		}
+    @include bpXs{ display: none; }
+
+		span{ display: block; }
 
 		&__title{
-			font-size: type-scale(4);
-			line-height: $blh*4;
+      @include vertical-rhythm(4, 4, 1, 1);
 			font-style: italic;
 			color: $lime;
+
+      @include bpXs{
+        @include vertical-rhythm(2, 2, 1, 1);
+      }
 		}
 		&__definition{
 			font-size: type-scale(1);

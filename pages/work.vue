@@ -46,6 +46,8 @@ export default {
 	}
 
 	> header{
+    margin-bottom: $blh*2;
+    
 		h1{
 			margin-top: 0px;
 			padding-top: $blh;
