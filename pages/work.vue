@@ -2,7 +2,7 @@
   <div class="work-page">
     <header>
       <h1>Work</h1>
-      <nuxt-link to="/">back</nuxt-link>
+      <nuxt-link to="/">home</nuxt-link>
       <nuxt-link to="/experience">experience</nuxt-link>
     </header>
     <ul class="projects">

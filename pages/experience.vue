@@ -1,8 +1,12 @@
 <template>
   <div class="experience-page">
-    <h1>Experience</h1>
-    <nuxt-link to="/">back</nuxt-link>
-    <nuxt-link to="/work">work</nuxt-link>
+    <header>
+      <h1>Experience</h1>
+      <nuxt-link to="/">home</nuxt-link>
+      <nuxt-link to="/work">work</nuxt-link>
+    </header>
+    <ul class="experience-list">
+    </ul>
   </div>
 </template>
 <script>
