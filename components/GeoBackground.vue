@@ -54,8 +54,8 @@ export default {
 @import "~assets/scss/mixins";
 .layout{
   &.route--experience .geo-background{
-    background-color: darken($teal, 5%);
-    svg path{ stroke: rgba($yellow, 0.5); }
+    background-color: darken($teal, 6%);
+    svg path{ stroke: rgba($cyan, 0.85); }
   }
 
   &.route--work .geo-background{
