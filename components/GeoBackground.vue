@@ -52,14 +52,32 @@ export default {
 </script>
 <style lang="scss">
 @import "~assets/scss/mixins";
+.layout{
+  &.route--experience .geo-background{
+    background-color: darken($teal, 5%);
+    svg path{ stroke: rgba($yellow, 0.5); }
+  }
+
+  &.route--work .geo-background{
+    background-color: darken($blue, 10%);
+    svg path{ stroke: rgba($yellow, 0.7); }
+  }
+  
+  &.route--index .geo-background{
+    background-color: darken($deep_purple, 5%);
+    svg path{ stroke: rgba($cyan, 0.8); }
+  }
+}
+
 .geo-background{
-	@include position(fixed, 0px 0px 0px 0px);
-	background: linear-gradient(160deg, $gray-z3, darken($gray-z3, 4%));
+	@include position(fixed, 0px 0px $blh * 14 0px);
+  transition: background 2.0s $ease-in-out-quad;
+  background: $red;
 	z-index: -1;
 
 	svg{
 		@include size(100%);
-		opacity: 0.6;
+    opacity: 0.8;
 
 		@include bpSm{
 			transform: translateX(-100%) scaleX(3);
@@ -68,23 +86,13 @@ export default {
 		path{
 			fill: none;
 			stroke: $cyan;
-			stroke-width: 1;
+      stroke-width: 1;
+      transition: stroke 2.0s $ease-out-quad;
 
-			&.layer1{
-				stroke-opacity: 0.5;
-			}
-			&.layer2{
-				stroke-opacity: 0.25;
-				color: $indigo;
-			}
-			&.layer3{
-				stroke-opacity: 0.1;
-			}
-
-			&.grid-path{
-				stroke-width: 1;
-				stroke: rgba($teal, 0.5);
-			}
+			&.layer1{ stroke-opacity: 0.5; }
+			&.layer2{ stroke-opacity: 0.3; color: white; }
+			&.layer3{ stroke-opacity: 0.1; }
+			&.grid-path{ stroke-width: 1; stroke: rgba(white, 0.5); }
 		}
 	}
 }

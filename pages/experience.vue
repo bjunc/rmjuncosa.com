@@ -1,10 +1,5 @@
 <template>
   <div class="experience-page">
-    <header>
-      <h1>Experience</h1>
-      <nuxt-link to="/">home</nuxt-link>
-      <nuxt-link to="/work">work</nuxt-link>
-    </header>
     <ul class="experiences">
       <Experience v-for="(experience, index) in experiences" :experience="experience" :key="index" />
     </ul>
@@ -36,17 +31,11 @@ export default {
 <style lang="scss">
 @import "~assets/scss/mixins";
 .experience-page{
-	text-align: right;
-	padding-right: $blh*2;
-	padding-bottom: $blh*4;
-
-	@include bpXs{
-		padding-left: $blh;
-		padding-right: $blh;
-	}
+  text-align: right;
+  @include padding($blh $blh $blh * 4);
 
 	> header{
-    margin-bottom: $blh*2;
+    margin-bottom: $blh * 2;
 
 		h1{
 			margin-top: 0px;
@@ -54,18 +43,13 @@ export default {
 		}
 	}
 
-	.experiences{
-		text-align: left;
-	}
+	.experiences{ text-align: left; width: $breakpoint_sm; max-width: 100%; @include margin(null auto); }
 
 	.experience{
-		margin-top: $blh*2;
+		margin-top: $blh;
 
+    @include bpXs{ margin-top: $blh; }
 		&:first-child{ margin-top: 0px;	}
-
-    @include bpXs{
-      margin-top: $blh;
-	  }
 	}
 }
 </style>

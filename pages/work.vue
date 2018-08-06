@@ -1,10 +1,5 @@
 <template>
   <div class="work-page">
-    <header>
-      <h1>Work</h1>
-      <nuxt-link to="/">home</nuxt-link>
-      <nuxt-link to="/experience">experience</nuxt-link>
-    </header>
     <ul class="projects">
       <Project v-for="project in projects" :project="project" :key="project.title" />
     </ul>
@@ -36,17 +31,14 @@ export default {
 <style lang="scss">
 @import "~assets/scss/mixins";
 .work-page{
-	text-align: right;
-	padding-right: $blh*2;
-	padding-bottom: $blh*4;
+  text-align: right;
+  padding-top: $blh;
+	padding-bottom: $blh * 4;
 
-	@include bpXs{
-		padding-left: $blh;
-		padding-right: $blh;
-	}
+	@include bpXs{ padding-left: $blh; padding-right: $blh; }
 
 	> header{
-    margin-bottom: $blh*2;
+    margin-bottom: $blh * 2;
     
 		h1{
 			margin-top: 0px;
@@ -55,13 +47,12 @@ export default {
 	}
 
 	.projects{
+    @include margin(null auto);
 		text-align: left;
+    width: $breakpoint_md;
+    max-width: 100%;
 	}
 
-	.project{
-		margin-top: $blh*2;
-
-		&:first-child{ margin-top: 0px;	}
-	}
+	.project{ margin-top: $blh; }
 }
 </style>

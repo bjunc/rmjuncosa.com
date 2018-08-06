@@ -1,5 +1,23 @@
 export default [
   {
+    title: 'EdgewiseRealty.com v5',
+    client: 'Edgewise Realty',
+    description: `
+      New construction marketplace for builders to sell directly to buyers.
+      Built-in CMS, CRM, payment processing, and public API.
+    `,
+    techDescription: 'SSR Nuxt.js front-end, Phoenix back-end, via GraphQL. Deployed via Docker to AWS and Heroku.',
+    date: '2017',
+    status: 'active',
+    role: 'CTO (full-stack dev), creative & marketing director',
+    tags: {
+      primary: ['vuejs', 'phoenix', 'graphql', 'symfony', 'mysql'],
+      secondary: ['webpack', 'sass'],
+      services: ['Stripe', 'Mandrill', 'Twilio', 'Slack', 'Sentry/Raven', 'Mixpanel', 'GetStream'],
+      devops: ['docker', 'aws', 'heroku']
+    }
+  },
+  {
     title: 'Core22',
     client: 'Core',
     description: 'Wellness / weight-loss app, with ecommerce, and real-time coaching.',
@@ -11,9 +29,10 @@ export default [
     date: '2017',
     status: 'MVP development',
     tags: {
-      primary: ['vuejs', 'graphql', 'phoenix', 'postgres', 'heroku'],
+      primary: ['vuejs', 'phoenix', 'graphql', 'postgres'],
       secondary: ['webpack', 'sass'],
-      services: ['SendGrid', 'Twilio', 'Stripe', 'Sentry/Raven', 'Mixpanel']
+      services: ['SendGrid', 'Twilio', 'Stripe', 'Sentry/Raven', 'Mixpanel'],
+      devops: ['heroku']
     }
   },
   {
@@ -25,13 +44,14 @@ export default [
     status: 'MVP private beta',
     role: 'front-end dev',
     tags: {
-      primary: ['vuejs', 'laravel', 'postgres', 'heroku'],
+      primary: ['vuejs', 'laravel', 'postgres'],
       secondary: ['webpack', 'sass'],
-      services: ['Dropbox', 'Box', 'aws', 'MailGun', 'Sentry/Raven', 'Mixpanel']
+      services: ['Dropbox', 'Box', 'aws', 'MailGun', 'Sentry/Raven', 'Mixpanel'],
+      devops: ['aws', 'heroku']
     }
   },
   {
-    title: 'EdgewiseRealty.com',
+    title: 'EdgewiseRealty.com v4',
     client: 'Edgewise Realty',
     description: `
       New construction marketplace connecting buyers and sellers from 
@@ -42,9 +62,10 @@ export default [
     status: 'active',
     role: 'CTO (full-stack dev), creative & marketing director',
     tags: {
-      primary: ['vuejs', 'graphql', 'symfony', 'mysql', 'aws'],
+      primary: ['vuejs', 'graphql', 'symfony', 'mysql'],
       secondary: ['webpack', 'sass'],
-      services: ['Stripe', 'Mandrill', 'Twilio', 'Slack', 'Sentry/Raven', 'Mixpanel', 'GetStream']
+      services: ['Stripe', 'Mandrill', 'Twilio', 'Slack', 'Sentry/Raven', 'Mixpanel', 'GetStream'],
+      devops: ['aws']
     }
   },
   {
@@ -57,7 +78,8 @@ export default [
     role: 'front-end dev',
     tags: {
       primary: ['backbonejs', 'drupal', 'mysql'],
-      secondary: ['sass']
+      secondary: ['sass'],
+      devops: ['aws']
     }
   },
   {
@@ -69,8 +91,9 @@ export default [
     status: 'active, unmaintained',
     role: 'full-stack dev, creative director',
     tags: {
-      primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
-      secondary: ['sass']
+      primary: ['backbonejs', 'drupal', 'mysql'],
+      secondary: ['sass'],
+      devops: ['aws']
     }
   },
   {
@@ -82,8 +105,9 @@ export default [
     description: 'Internal tool for coordinating client visit agendas, as well notifying presenters via calendar invites/updates.  Visit itineraries are printable for handouts on visit day.',
     techDescription: 'Drupal 7 content management system with Backbone.js',
     tags: {
-      primary: ['backbonejs', 'drupal', 'mysql', 'aws'],
-      secondary: ['sass']
+      primary: ['backbonejs', 'drupal', 'mysql'],
+      secondary: ['sass'],
+      devops: ['aws']
     }
   },
   {
@@ -95,8 +119,9 @@ export default [
     techDescription: 'Custom video players supporting both Flash streaming and HTML5 from AWS.',
     role: 'full-stack dev, creative director',
     tags: {
-      primary: ['backbonejs', 'flash', 'aws'],
-      secondary: ['sass']
+      primary: ['backbonejs', 'flash'],
+      secondary: ['sass'],
+      devops: ['aws']
     }
   },
   {
@@ -108,8 +133,9 @@ export default [
     techDescription: 'Interactive marketing presentations built in web technology, with content managed through Drupal 7, and deployed through Adobe AIR.',
     role: 'full-stack dev, strategic and creative director',
     tags: {
-      primary: ['backbonejs', 'drupal', 'mysql', 'air', 'aws'],
-      secondary: ['sass']
+      primary: ['backbonejs', 'drupal', 'mysql', 'air'],
+      secondary: ['sass'],
+      devops: ['aws']
     }
   },
   {

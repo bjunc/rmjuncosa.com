@@ -15,12 +15,10 @@
 			<ul class="tags tags--primary">
 				<li class="tag" v-for="(tag, index) in project.tags.primary" :key="index">
 					<AdobeAirIcon v-if="tag === 'air'" />
-					<AwsIcon v-else-if="tag === 'aws'" />
 					<BackboneIcon v-else-if="tag === 'backbonejs'" />
 					<DrupalIcon v-else-if="tag === 'drupal'" />
           <FlashIcon v-else-if="tag === 'flash'" />
 					<GraphQlIcon v-else-if="tag === 'graphql'" />
-					<HerokuIcon v-else-if="tag === 'heroku'" />
 					<SymfonyIcon v-else-if="tag === 'symfony'" />
 					<LaravelIcon v-else-if="tag === 'laravel'" />
 					<MySqlIcon v-else-if="tag === 'mysql'" />
@@ -52,6 +50,14 @@
 					<span v-else>{{ tag }}</span>
 				</li>
 			</ul>
+      <ul class="tags tags--devops">
+				<li class="tag" v-for="(tag, index) in project.tags.devops" :key="index">
+					<AwsIcon v-if="tag === 'aws'" />
+          <DockerIcon v-else-if="tag === 'docker'" />
+          <HerokuIcon v-else-if="tag === 'heroku'" />
+					<span v-else>{{ tag }}</span>
+				</li>
+			</ul>
 			<!-- <ul class="tags tags--tertiary">
 				<li class="tag" v-for="(tag, index) in project.tags.services" :key="index">{{ tag }}</li>
 			</ul> -->
@@ -62,6 +68,7 @@
 import AdobeAirIcon from '~/components/icons/AdobeAirIcon'
 import AwsIcon from '~/components/icons/AwsIcon'
 import BackboneIcon from '~/components/icons/BackboneIcon'
+import DockerIcon from '~/components/icons/DockerIcon'
 import DrupalIcon from '~/components/icons/DrupalIcon'
 import FlashIcon from '~/components/icons/FlashIcon'
 import GraphQlIcon from '~/components/icons/GraphQlIcon'
@@ -76,68 +83,45 @@ import VueIcon from '~/components/icons/VueIcon'
 import WebpackIcon from '~/components/icons/WebpackIcon'
 export default {
   props: ['project'],
-  components: { AdobeAirIcon, AwsIcon, BackboneIcon, DrupalIcon, FlashIcon, GraphQlIcon, HerokuIcon, LaravelIcon, MySqlIcon, PhoenixIcon, PostgresIcon, SassIcon, SymfonyIcon, VueIcon, WebpackIcon }
+  components: { AdobeAirIcon, AwsIcon, BackboneIcon, DockerIcon, DrupalIcon, FlashIcon, GraphQlIcon, HerokuIcon, LaravelIcon, MySqlIcon, PhoenixIcon, PostgresIcon, SassIcon, SymfonyIcon, VueIcon, WebpackIcon }
 }
 </script>
 <style lang="scss">
 @import "~assets/scss/mixins";
 .project{
 	@include border-box;
-  @include padding($blh*1 $blh $blh*3 $blh*3);
-	width: calc(70.75% - 14.65%);
+  @include padding(null $blh $blh * 3 $blh * 3);
 	position: relative;
 	z-index: 2;
-	margin-left: 14.65%;
-	border: 1px solid rgba($gray-z4, 0.6);
-	background-color: rgba(darken($gray-z3, 3%), 0.8);
+	border-bottom: 1px solid $gray_z6;
 
-	@include bpXs{
-		margin-left: 0px;
-		width: 100%;
-		padding-left: $blh;
-	}
+  @include bpSm{ @include padding(null $blh * 2); }
+	@include bpXs{ @include padding(null $blh); margin-left: 0px; width: 100%; }
 
 	h3{
-		@include vertical-rhythm(3, 3);
+		@include vertical-rhythm(3, 3, 2);
 		font-weight: 200;
-		color: $gray-z7;
+		color: $gray_z3;
 
-		@include bpXs{
-			@include vertical-rhythm(2, 2);
-		}
+		@include bpSm{ @include vertical-rhythm(2, 2, 2); }
 	}
 
-	&__description{
-		margin-bottom: $blh;
-	}
-
-	&__client{
-		color: $gray-z5;
-	}
-
-	&__status{
-		margin-top: -$blh;
-		margin-bottom: $blh;
-		color: $gray-z5;
-	}
-
-	&__role{
-		color: $gray-z5;
-		margin-top: -$blh;
-		margin-bottom: $blh;
-	}
+	&__description{ margin-top: $blh * 2; margin-bottom: $blh; }
+	&__client{ color: $gray-z5; }
+	&__status{ margin-top: -$blh; margin-bottom: $blh; color: $gray-z5; }
+	&__role{ color: $gray-z5; margin-top: -$blh; margin-bottom: $blh; }
 
 	$icon_size: 34px;
 
 	.tags{
 		&.tags--primary{
+      margin-top: $blh * 3;
+
 			.tag{
 				line-height: $icon_size;
 				color: $blue;
 
-				.icon path{
-					fill: $blue;
-				}
+				.icon path{ fill: $blue; }
 			}
 		}
 
@@ -145,7 +129,17 @@ export default {
 			.tag{
 				line-height: $icon_size;
 				color: $cyan;
+
 				.icon path{ fill: $cyan; }
+			}
+    }
+    
+    &.tags--devops{
+			.tag{
+				line-height: $icon_size;
+				color: $deep_purple;
+
+				.icon path{ fill: $deep_purple; }
 			}
 		}
 
@@ -153,34 +147,16 @@ export default {
 			height: $icon_size;
 			// color: $lime;
 
-			.icon{
-				@include size($icon_size);
-
-				path{
-					// fill: $deep-purple;
-				}
-			}
+			.icon{ @include size($icon_size); }
 		}
-
-		
 	}
 
 	&__description, &__technology{
-		color: $gray-z6;
-
-		p{
-			width: 600px;
-			max-width: 100%;
-		}
+		p{ width: 600px; max-width: 100%; }
 	}
 
-	&__client{
-		margin-bottom: $blh;
-	}
-
-	&__tech-description{
-		margin-bottom: $blh*2;
-	}
+	&__client{ margin-bottom: $blh; }
+	&__tech-description{ margin-bottom: $blh * 2; }
 
 	&__technology{
 		.tags{
@@ -188,7 +164,7 @@ export default {
 			margin-top: $blh;
 
 			.tag{
-				@include padding(null $blh*0.5);
+				@include padding(null $blh * 0.5);
 				font-size: type-scale(0);
 				font-weight: 200;
 			}
