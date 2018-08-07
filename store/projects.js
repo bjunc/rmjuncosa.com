@@ -6,7 +6,10 @@ export default [
       New construction marketplace for builders to sell directly to buyers.
       Built-in CMS, CRM, payment processing, and public API.
     `,
-    techDescription: 'SSR Nuxt.js front-end, Phoenix back-end, via GraphQL. Deployed via Docker to AWS and Heroku.',
+    techDescription: `
+    SSR Nuxt.js front-end, Phoenix back-end, via GraphQL.
+    Deployed via Docker to AWS and Heroku.
+    `,
     date: '2017',
     status: 'active',
     role: 'CTO (full-stack dev), creative & marketing director',
@@ -20,14 +23,14 @@ export default [
   {
     title: 'Core22',
     client: 'Core',
-    description: 'Wellness / weight-loss app, with ecommerce, and real-time coaching.',
+    description: 'MVP wellness / weight-loss app; with ecommerce and real-time coaching.',
     role: 'full-stack dev',
     techDescription: `
     Isomorphic JS (Universal JS / SSR) talking to Phoenix via GraphQL over socket channels.
     Payment processing through Stripe.
     `,
     date: '2017',
-    status: 'MVP development',
+    status: 'prototype',
     tags: {
       primary: ['vuejs', 'phoenix', 'graphql', 'postgres'],
       secondary: ['webpack', 'sass'],
@@ -38,10 +41,10 @@ export default [
   {
     title: 'S4C',
     client: 'Marketbridge',
-    description: 'b2b asset management connecting Dropbox, Box, and AWS S3 storage with tagging, search, and user management.',
+    description: 'MVP b2b asset management connecting Dropbox, Box, and AWS S3 storage with tagging, search, and user management.',
     techDescription: 'Vue SPA talking to Laravel via REST.',
     date: '2017',
-    status: 'MVP private beta',
+    status: 'commercial product',
     role: 'front-end dev',
     tags: {
       primary: ['vuejs', 'laravel', 'postgres'],
@@ -59,7 +62,7 @@ export default [
     `,
     techDescription: 'Multi-page Vue app calling both GraphQL and REST APIs.',
     date: '2017',
-    status: 'active',
+    status: 'upgraded',
     role: 'CTO (full-stack dev), creative & marketing director',
     tags: {
       primary: ['vuejs', 'graphql', 'symfony', 'mysql'],
@@ -88,7 +91,7 @@ export default [
     description: 'b2b marketing site.  Oversaw strategy, content, design, and was lead full-stack developer.',
     techDescription: 'Content management through Drupal 7, with Backbone.js',
     date: '2015',
-    status: 'active, unmaintained',
+    status: 'retired',
     role: 'full-stack dev, creative director',
     tags: {
       primary: ['backbonejs', 'drupal', 'mysql'],
