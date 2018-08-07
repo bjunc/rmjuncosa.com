@@ -51,7 +51,10 @@ export default {
       letter-spacing: 0.05em;
     }
 
-    nav a{ transition: color 1s $ease-in-out-quad; text-transform: uppercase; font-weight: 200; letter-spacing: 0.05em; }
+    nav a{ display: inline-block; transition: color 1s $ease-in-out-quad; text-transform: uppercase; font-weight: 200; letter-spacing: 0.05em; }
+    nav a:after{ margin-top: $blh * 0.25; display: block; width: 100%; height: 1px; background: rgba(white, 0.75); content: ''; transform: scaleX(0); transition: transform 0.3s $ease-out-cubic; }
+    nav a:hover:after{ transform: scaleX(0.25); }
+    nav a.nuxt-link-active:after{ transform: scaleX(1); }
 
     .contacts{
       margin-bottom: $blh;
