@@ -1,7 +1,7 @@
 <template>
   <div class="index-page">
     <div class="polymath">
-      <span class="polymath__title">polymath</span>
+      <span class="polymath__title">polymath [noun]</span>
       <span class="polymath__definition">
         a person whose expertise spans a significant number of different subject areas;
         such a person is known to draw on complex bodies of knowledge to solve specific problems
@@ -54,7 +54,7 @@ export default {
 		&__title{
       @include vertical-rhythm(4, 4, 1, 1);
 			font-style: italic;
-			// color: $lime;
+			font-weight: 400;
       color: $gray_z6;
 
       @include bpXs{
