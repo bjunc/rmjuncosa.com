@@ -43,11 +43,12 @@ export default {
 
 .index-page{
 	.polymath{
-		@include padding($blh null null 10%);
+		@include padding($blh null null 20%);
 		font-weight: 200;
 		margin-top: $blh * 2;
 
-    @include bpXs{ display: none; }
+    @include bpSm{ @include padding($blh $blh * 4); }
+    @include bpXs{ @include padding($blh $blh * 2); }
 
 		span{ display: block; }
 
@@ -57,15 +58,15 @@ export default {
 			font-weight: 400;
       color: $gray_z6;
 
-      @include bpXs{
-        @include vertical-rhythm(2, 2, 1, 1);
-      }
+      @include bpXs{ @include vertical-rhythm(2, 2, 1, 1); }
 		}
 
 		&__definition{
 			font-size: type-scale(1);
 			line-height: $blh * 2;
 			max-width: 700px;
+
+      @include bpXs{ @include vertical-rhythm(1, 1.75); }
 		}
 	}
 }

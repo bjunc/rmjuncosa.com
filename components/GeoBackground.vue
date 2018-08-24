@@ -53,19 +53,19 @@ export default {
 <style lang="scss">
 @import "~assets/scss/mixins";
 .layout{
-  &.route--experience .geo-background{
-    background-color: darken($teal, 6%);
-    svg path{ stroke: rgba($cyan, 0.85); }
+  &.route--index .geo-background{
+    background-color: darken($teal, 12%);
+    svg path{ stroke: rgba($cyan, 0.8); }
   }
 
   &.route--work .geo-background{
-    background-color: darken($blue, 10%);
-    svg path{ stroke: rgba($yellow, 0.7); }
+    background-color: saturate(darken($blue, 20%), 10%);
+    svg path{ stroke: rgba($yellow, 0.5); }
   }
   
-  &.route--index .geo-background{
-    background-color: darken($deep_purple, 5%);
-    svg path{ stroke: rgba($cyan, 0.8); }
+  &.route--experience .geo-background{
+    background-color: darken($deep_purple, 15%);
+    svg path{ stroke: rgba($cyan, 0.7); }
   }
 }
 

@@ -1,10 +1,10 @@
 <template>
 	<li class="experience">
-    <h4 class="experience__date">
-			<span v-if="experience.date">{{ experience.date }}</span>
+    <h4 v-if="experience.date" class="experience__date">
+			<span>{{ experience.date }}</span>
 		</h4>
-    <h4 class="experience__company">
-			<span v-if="experience.company">{{ experience.company }}</span>
+    <h4 v-if="experience.company" class="experience__company">
+			<span>{{ experience.company }}</span>
 		</h4>
 		<h3 class="experience__title">{{ experience.title }}</h3>
 	</li>
@@ -36,7 +36,7 @@ export default {
     white-space: nowrap;
 
     @include bpXs{
-		  @include vertical-rhythm(2, 2, 1, 1);
+		  @include vertical-rhythm(1, 2, 2, 0);
 	  }
 	}
 

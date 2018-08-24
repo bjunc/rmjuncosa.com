@@ -9,6 +9,7 @@
           <a class="contact contact--email" href="mailto:bobbyjuncosa@gmail.com"></a>
           <a class="contact contact--github" href="https://github.com/bjunc" target="_blank"></a>
           <a class="contact contact--medium" href="https://medium.com/@bobbyjuncosa" target="_blank"></a>
+          <a class="contact contact--linkedin" href="https://www.linkedin.com/in/bobbyjuncosa/" target="_blank"></a>
           <a class="contact contact--location" href="https://www.google.com/maps/place/Brickell,+Miami,+FL/@25.7592852,-80.2116203,14z/data=!3m1!4b1!4m5!3m4!1s0x88d9b680b32f18ad:0x4ad3029ff324f4d5!8m2!3d25.7601793!4d-80.1958755" target="_blank"></a>
         </div>
         <nav> 
@@ -66,6 +67,7 @@ export default {
         &--email{ &:before{ @include FontAwesome($fa-var-envelope); font-size: 20px; } }
         &--github{ &:before{ @include position(relative, 1px null null null); @include FontAwesome($fa-var-github); font-size: 22px; } }
         &--location{ &:before{ @include FontAwesome($fa-var-map-marker); font-size: 21px; } }
+        &--linkedin{ &:before{ @include FontAwesome($fa-var-linkedin); font-size: 21px; } }
         &--medium{ &:before{ @include FontAwesome($fa-var-medium); font-size: 21px; } }
       }
     }
@@ -73,9 +75,9 @@ export default {
 }
 
 .layout{
-  &.route--experience nav a{ color: $lime; }
-  &.route--work nav a{ color: $yellow; }
-  &.route--index nav a{ color: $cyan; } 
+  &.route--index nav a{ color: $lime; }
+  &.route--work nav a{ color: $orange; }
+  &.route--experience nav a{ color: $cyan; } 
 }
 
 .page{
