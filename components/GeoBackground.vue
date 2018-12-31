@@ -53,17 +53,17 @@ export default {
 <style lang="scss">
 .layout{
   &.route--index .geo-background{
-    background-color: darken($teal, 12%);
+    background-color: mix($teal, $gray_z3, 20%);
     svg path{ stroke: rgba($cyan, 0.8); }
   }
 
   &.route--work .geo-background{
-    background-color: saturate(darken($blue, 20%), 10%);
+    background-color: mix($blue, $gray_z3, 20%);
     svg path{ stroke: rgba($yellow, 0.5); }
   }
   
   &.route--experience .geo-background{
-    background-color: darken($deep_purple, 15%);
+    background-color: mix($deep_purple, $gray_z3, 20%);
     svg path{ stroke: rgba($cyan, 0.7); }
   }
 }
