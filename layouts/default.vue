@@ -38,6 +38,8 @@ export default {
     height: $blh * 9;
     text-align: right;
 
+    @include bpXs{ @include padding(null $blh); }
+
     h1{
       @include bpXs{ @include vertical-rhythm(2, 1.75, 1, 1.5); }
       a{ color: white; padding: 0px; }
