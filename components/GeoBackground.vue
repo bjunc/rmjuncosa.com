@@ -51,7 +51,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "~assets/scss/mixins";
 .layout{
   &.route--index .geo-background{
     background-color: darken($teal, 12%);
@@ -79,9 +78,7 @@ export default {
 		@include size(100%);
     opacity: 0.8;
 
-		@include bpSm{
-			transform: translateX(-100%) scaleX(3);
-		}
+		@include bpSm{ transform: translateX(-100%) scaleX(3); }
 
 		path{
 			fill: none;

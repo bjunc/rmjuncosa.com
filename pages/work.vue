@@ -36,22 +36,9 @@ export default {
 
 	@include bpXs{ padding-left: $blh; padding-right: $blh; }
 
-	> header{
-    margin-bottom: $blh * 2;
-    
-		h1{
-			margin-top: 0px;
-			padding-top: $blh;
-		}
-	}
-
-	.projects{
-    @include margin(null auto);
-		text-align: left;
-    width: $breakpoint_md;
-    max-width: 100%;
-	}
-
+	> header{ margin-bottom: $blh * 2; }
+  > header h1{ margin-top: 0px; padding-top: $blh; }
+	.projects{ @include margin(null auto); text-align: left; width: $breakpoint_md; max-width: 100%; }
 	.project{ margin-top: $blh; }
 }
 </style>

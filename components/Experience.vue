@@ -15,7 +15,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "~assets/scss/mixins";
 .experience{
 	@include border-box;
 	position: relative;
@@ -35,9 +34,7 @@ export default {
     letter-spacing: -0.02em;
     white-space: nowrap;
 
-    @include bpXs{
-		  @include vertical-rhythm(1, 2, 2, 0);
-	  }
+    @include bpXs{ @include vertical-rhythm(1, 2, 2, 0); }
 	}
 
 	&__title{
@@ -55,9 +52,7 @@ export default {
 
 	&__company{
 		@include vertical-rhythm(1, 2, 0, 0);
-    @include bpXs{
-			@include vertical-rhythm(1, 1, 0);
-		}
+    @include bpXs{ @include vertical-rhythm(1, 1, 0); }
 	}
 }
 </style>

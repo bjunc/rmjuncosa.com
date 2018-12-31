@@ -33,6 +33,12 @@ export default {
 #__nuxt{ overflow-x: hidden; max-width: 100%; }
 
 .layout{
+  &.route--index nav a{ color: $lime; }
+  &.route--work nav a{ color: $orange; }
+  &.route--experience nav a{ color: $cyan; } 
+}
+
+.layout{
   & > header{
     @include padding(0px $blh * 2 $blh);
     height: $blh * 9;
@@ -75,12 +81,6 @@ export default {
       }
     }
   }
-}
-
-.layout{
-  &.route--index nav a{ color: $lime; }
-  &.route--work nav a{ color: $orange; }
-  &.route--experience nav a{ color: $cyan; } 
 }
 
 .page{

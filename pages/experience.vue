@@ -36,10 +36,7 @@ export default {
 	> header{
     margin-bottom: $blh * 2;
 
-		h1{
-			margin-top: 0px;
-			padding-top: $blh;
-		}
+		h1{ margin-top: 0px; padding-top: $blh; }
 	}
 
 	.experiences{ text-align: left; width: $breakpoint_sm; max-width: 100%; @include margin(null auto); }
