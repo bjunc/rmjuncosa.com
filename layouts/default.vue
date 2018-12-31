@@ -58,7 +58,9 @@ export default {
     nav a.nuxt-link-active:after{ transform: scaleX(1); }
 
     .contacts{
+      display: flex;
       margin-bottom: $blh;
+      justify-content: flex-end;
 
       .contact{
         &:before{ color: rgba(white, 0.4); font-size: 25px; }
