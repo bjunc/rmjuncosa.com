@@ -1,7 +1,7 @@
 @import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "../../node_modules/font-awesome/scss/variables";
 
-$default_font_size: 16px;
+$default_font_size: 17px;
 $line_height_ratio: 1.33; // perfect-fourth
 // $line_height_ratio: 1.414; // augmented-fourth
 $base_line_height: round($line_height_ratio * $default_font_size);
