@@ -5,7 +5,7 @@
   "author": "Robert Juncosa <bobbyjuncosa@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "PORT=7000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -14,29 +14,30 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "bourbon": "^4.3.4",
-    "font-awesome": "^4.7.0",
-    "gsap": "^1.20.2",
+    "@nuxtjs/style-resources": "~0.1.1",
+    "bourbon": "~4.3.4",
+    "font-awesome": "~4.7.0",
+    "gsap": "~1.20.2",
     "lodash": "^4.17.4",
-    "nuxt": "^1.0.0-rc3",
-    "tinyreset": "^1.0.1"
+    "nuxt": "~2.3.4",
+    "tinyreset": "~1.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "eslint": "~5.6.1",
+    "eslint-config-standard": "~12.0.0",
+    "eslint-loader": "~2.1.1",
+    "eslint-plugin-html": "~4.0.6",
+    "eslint-plugin-import": "~2.14.0",
+    "eslint-plugin-node": "~7.0.1",
+    "eslint-plugin-promise": "~4.0.1",
+    "eslint-plugin-standard": "~4.0.0",
+    "node-sass": "~4.9.3",
+    "sass-loader": "~7.1.0"
   },
   "engines": {
-    "node": "^8.2.x",
+    "node": "^8.10.x",
     "npm": "5.3.0",
-    "yarn": "0.28.4"
+    "yarn": "^1.10.1"
   }
 }

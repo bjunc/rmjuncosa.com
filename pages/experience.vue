@@ -7,7 +7,7 @@
 </template>
 <script>
 /* eslint-disable no-unused-vars */
-import { TweenMax, Quad, Cubic, Quart } from 'gsap'
+import { TweenMax, Quad, Cubic, Quart } from 'gsap/TweenMax'
 import experiences from '~/store/experiences'
 import Experience from '~/components/Experience'
 export default {
@@ -29,7 +29,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "~assets/scss/mixins";
 .experience-page{
   text-align: right;
   @include padding($blh $blh $blh * 4);

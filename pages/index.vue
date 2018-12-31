@@ -11,7 +11,7 @@
 </template>
 <script>
 /* eslint-disable no-unused-vars */
-import { TweenMax, Quad, Cubic, Quart } from 'gsap'
+import { TweenMax, Quad, Cubic, Quart } from 'gsap/TweenMax'
 export default {
   transition: {
     enter (el, done) {
@@ -28,10 +28,10 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "~assets/scss/mixins";
 .page-enter-active, .page-leave-active {
 	&.index-page{ .polymath{ transition: all 0.2s $ease-out-quart; } }
 }
+
 .page-enter, .page-leave-to {
 	&.index-page{
 		.polymath{

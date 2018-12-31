@@ -7,7 +7,7 @@
 </template>
 <script>
 /* eslint-disable no-unused-vars */
-import { TweenMax, Quad, Cubic, Quart } from 'gsap'
+import { TweenMax, Quad, Cubic, Quart } from 'gsap/TweenMax'
 import Project from '~/components/Project'
 import projects from '~/store/projects'
 export default {
@@ -29,7 +29,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "~assets/scss/mixins";
 .work-page{
   text-align: right;
   padding-top: $blh;

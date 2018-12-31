@@ -1,10 +1,11 @@
-module.exports = {
+export default {
+  modules: ['@nuxtjs/style-resources'],
 	/*
-  	** Headers of the page
-  	*/
-  	head: {
-		title: 'Robert M. Juncosa',
-		meta: [
+   * Headers of the page
+   */
+  head: {
+    title: 'Robert M. Juncosa',
+    meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ hid: 'description', name: 'description', content: ' ' }
@@ -15,33 +16,39 @@ module.exports = {
 		]
 	},
 	/*
-	** Customize the progress-bar color
- 	*/
-	loading: { 
-		color: '#4CAF50',
-		height: '4px'
-	},
+	 * Customize the progress-bar color
+ 	 */
+	loading: { color: '#4CAF50', height: '4px' },
+  /*
+   * Global CSS / SCSS
+   */
 	css: [
 		{ src: 'tinyreset/tinyreset.css', lang: 'css' },
 		{ src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' },
 		{ src: '~/assets/scss/base.scss', lang: 'scss' }
-	],
+  ],
+  /*
+   * Make SCSS available in every component.
+   */
+  styleResources: {
+    scss: './assets/scss/mixins.scss'
+  },
 	/*
-	** Build configuration
-	*/
+	 * Build configuration
+	 */
 	build: {
 		/*
-		** Run ESLINT on save
-		*/
-		extend (config, ctx) {
-			if (ctx.dev && ctx.isClient) {
-				config.module.rules.push({
-			  		enforce: 'pre',
-			  		test: /\.(js|vue)$/,
-			  		loader: 'eslint-loader',
-			  		exclude: /(node_modules)/
-				})
-		  	}
-		}
-  	}
+		 * Run ESLINT on save
+		 */
+    extend (config, ctx) {
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
+  }
 }

@@ -2,14 +2,14 @@
 	<div class="geo-background">
 		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
 			<path 
-				v-for="(path, index) in currentDataset.paths" 
-				:key="index"
+				v-for="(path, index) in currentDataset.paths"
+				:key="`path-${index}`"
 				:d="buildPath(path)" 
 				vector-effect="non-scaling-stroke"
 				:class="`layer${path.layer}`" />
 			<path 
 				v-for="(path, index) in currentDataset.grid" 
-				:key="index"
+				:key="`grid-${index}`"
 				:d="buildPath(path)" 
 				vector-effect="non-scaling-stroke"
 				:class="[`grid-path layer${path.layer}`, `layer${path.layer}`]" />

@@ -30,7 +30,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "~assets/scss/mixins";
 #__nuxt{ overflow-x: hidden; max-width: 100%; }
 
 .layout{
