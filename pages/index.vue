@@ -42,32 +42,31 @@ export default {
 }
 
 .index-page{
-	.polymath{
-		@include padding($blh null null 20%);
-		font-weight: 200;
-		margin-top: $blh * 2;
+  .polymath{
+    @include padding($blh $blh * 4 $blh * 4);
+    font-weight: 200;
+    margin-top: $blh * 2;
 
-    @include bpSm{ @include padding($blh $blh * 4); }
-    @include bpXs{ @include padding($blh $blh * 2); }
+    @include bpXs{ @include padding($blh * 2 $blh * 2); margin-top: 0px; }
 
-		span{ display: block; }
+    span{ display: block; }
 
-		&__title{
-      @include vertical-rhythm(4, 4, 1, 1);
-			font-style: italic;
-			font-weight: 400;
+    &__title{
+      @include vertical-rhythm(3, 3, 1, 1);
+      font-style: italic;
+      font-weight: 400;
       color: $gray_z6;
 
       @include bpXs{ @include vertical-rhythm(2, 2, 1, 1); }
-		}
+    }
 
-		&__definition{
-			font-size: type-scale(1);
-			line-height: $blh * 2;
-			max-width: 700px;
+    &__definition{
+      font-size: type-scale(1);
+      line-height: $blh * 1.5;
+      max-width: 700px;
 
-      @include bpXs{ @include vertical-rhythm(1, 1.75); }
-		}
-	}
+      @include bpXs{ @include vertical-rhythm(0, 1); }
+    }
+  }
 }
 </style>

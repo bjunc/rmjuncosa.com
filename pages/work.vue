@@ -32,7 +32,6 @@ export default {
 .work-page{
   text-align: right;
   padding-top: $blh;
-	padding-bottom: $blh * 4;
 
 	@include bpXs{ padding-left: $blh; padding-right: $blh; }
 

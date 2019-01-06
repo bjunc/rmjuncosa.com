@@ -31,7 +31,7 @@ export default {
 <style lang="scss">
 .experience-page{
   text-align: right;
-  @include padding($blh $blh $blh * 4);
+  @include padding($blh 0px 0px);
 
 	> header{
     margin-bottom: $blh * 2;
@@ -39,13 +39,13 @@ export default {
 		h1{ margin-top: 0px; padding-top: $blh; }
 	}
 
-	.experiences{ text-align: left; width: $breakpoint_sm; max-width: 100%; @include margin(null auto); }
+	.experiences{ text-align: left; width: 100%; }
 
 	.experience{
 		margin-top: $blh;
 
     @include bpXs{ margin-top: $blh; }
 		&:first-child{ margin-top: 0px;	}
-	}
+  }
 }
 </style>
