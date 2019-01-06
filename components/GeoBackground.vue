@@ -61,7 +61,7 @@ export default {
     background-color: mix($blue, $gray_z3, 20%);
     svg path{ stroke: rgba($yellow, 0.5); }
   }
-  
+
   &.route--experience .geo-background{
     background-color: mix($deep_purple, $gray_z3, 20%);
     svg path{ stroke: rgba($cyan, 0.7); }
@@ -69,28 +69,28 @@ export default {
 }
 
 .geo-background{
-	@include position(fixed, 0px 0px $blh * 14 0px);
+  @include position(fixed, 0px 0px 0px 0px);
   transition: background 2.0s $ease-in-out-quad;
   background: $red;
-	z-index: -1;
+  z-index: -1;
 
-	svg{
-		@include size(100%);
+  svg{
+    @include size(100%);
     opacity: 0.8;
 
-		@include bpSm{ transform: translateX(-100%) scaleX(3); }
+    @include bpSm{ transform: translateX(-100%) scaleX(3); }
 
-		path{
-			fill: none;
-			stroke: $cyan;
+    path{
+      fill: none;
+      stroke: $cyan;
       stroke-width: 1;
       transition: stroke 2.0s $ease-out-quad;
 
-			&.layer1{ stroke-opacity: 0.5; }
-			&.layer2{ stroke-opacity: 0.3; color: white; }
-			&.layer3{ stroke-opacity: 0.1; }
-			&.grid-path{ stroke-width: 1; stroke: rgba(white, 0.5); }
-		}
-	}
+      &.layer1{ stroke-opacity: 0.5; }
+      &.layer2{ stroke-opacity: 0.3; color: white; }
+      &.layer3{ stroke-opacity: 0.1; }
+      &.grid-path{ stroke-width: 1; stroke: rgba(white, 0.5); }
+    }
+  }
 }
 </style>
