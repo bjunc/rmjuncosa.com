@@ -22,7 +22,7 @@ export default {
   padding-right: $blh;
 	padding-left: $blh * 2;
 	padding-bottom: $blh * 2;
-	border-bottom: 1px solid $gray_z6;
+	border-bottom: 1px solid mix($gray_z6, $gray_z7);
 
 	@include bpXs{ padding-left: $blh; }
 

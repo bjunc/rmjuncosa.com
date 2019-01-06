@@ -93,7 +93,7 @@ export default {
   @include padding(null $blh $blh * 3 $blh * 3);
 	position: relative;
 	z-index: 2;
-	border-bottom: 1px solid $gray_z6;
+	border-bottom: 1px solid mix($gray_z6, $gray_z7);
 
   @include bpSm{ @include padding(null $blh * 2); }
 	@include bpXs{ @include padding(null $blh); margin-left: 0px; width: 100%; }
