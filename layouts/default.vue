@@ -41,8 +41,11 @@ export default {
 .layout{
   & > header{
     @include padding(0px $blh * 2 $blh);
-    height: $blh * 9;
+    @include border-box;
+    height: $blh * 12;
     text-align: right;
+    display: inline-block;
+    width: 100%;
 
     @include bpXs{ @include padding(null $blh); }
 
@@ -87,7 +90,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-height: calc(100vh - #{$blh * 12});
 }
 
 main{
@@ -95,5 +97,8 @@ main{
   flex-grow: 1;
   color: $gray_z4;
   box-shadow: 0px 0px 40px 1px rgba(black, 0.15);
+  margin: 0px auto $blh * 3;
+  width: $breakpoint_md;
+  max-width: 100%;
 }
 </style>

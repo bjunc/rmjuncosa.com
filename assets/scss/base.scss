@@ -1,12 +1,15 @@
 @import "~assets/scss/mixins";
+
+html { box-sizing: border-box; font-size: $default_font_size; }
+*, *:before, *:after { box-sizing: inherit; }
+
 body{
 	font-family: 'Montserrat', sans-serif;
-	color: $gray-z6;
-	font-size: $default-font-size;
+	color: $gray_z6;
+	font-size: $default_font_size;
 	line-height: $blh;
 	font-weight: 300;
-	background-color: $gray-z3;
-	padding-top: $blh;
+	background-color: $gray_z3;
 	letter-spacing: 0.03em;
 	min-height: 100vh;
 }
