@@ -9,10 +9,10 @@
 		<h4 v-if="project.role" class="project__role">role: {{ project.role }}</h4>
 		<div class="project__description"><p>{{ project.description }}</p></div>
 		<div class="project__technology">
-			<div class="project__tech-description">
+			<div v-if="project.techDescription" class="project__tech-description">
 				<p>{{ project.techDescription }}</p>
 			</div>
-			<ul class="tags tags--primary">
+			<ul v-if="project.tags.primary.length > 0" class="tags tags--primary">
 				<li class="tag" v-for="(tag, index) in project.tags.primary" :key="index">
 					<AdobeAirIcon v-if="tag === 'air'" />
 					<BackboneIcon v-else-if="tag === 'backbonejs'" />
@@ -30,7 +30,7 @@
 					<span v-else>{{ tag }}</span>
 				</li>
 			</ul>
-			<ul class="tags tags--secondary">
+			<ul v-if="project.tags.secondary.length > 0" class="tags tags--secondary">
 				<li class="tag" v-for="(tag, index) in project.tags.secondary" :key="index">
 					<AdobeAirIcon v-if="tag === 'air'" />
 					<AwsIcon v-else-if="tag === 'aws'" />
@@ -50,7 +50,7 @@
 					<span v-else>{{ tag }}</span>
 				</li>
 			</ul>
-      <ul class="tags tags--devops">
+      <ul v-if="project.tags.devops && project.tags.devops.length > 0" class="tags tags--devops">
 				<li class="tag" v-for="(tag, index) in project.tags.devops" :key="index">
 					<AwsIcon v-if="tag === 'aws'" />
           <DockerIcon v-else-if="tag === 'docker'" />
